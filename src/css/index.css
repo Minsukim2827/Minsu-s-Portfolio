@@ -1,10 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* color template
+#936A61
+#FFB5A7
+#FCD5CE
+#F8EDEB
+#F9DCC4
+#FEC89A
+#1A1A1A
+*/
+/* 
+e.g.
+peach: light, DEFAULT, dark
+cream: light, DEFAULT
+like peach-light
+or like cream (will be DEFAULT)
+*/
 
 :root {
   font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+
+  color: smokey;
+  --bg-background: #f8ede3;
 }
+
+.dark {
+  --bg-background: #1a1a1a; 
+}
+
 
   @layer base {
     :root {

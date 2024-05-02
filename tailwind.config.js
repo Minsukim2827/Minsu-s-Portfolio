@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: ["selector"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './pages/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
+    './src/**/*.{js,jsx}',
   ],
   prefix: "",
   theme: {
@@ -17,7 +17,24 @@ module.exports = {
       },
     },
     extend: {
+      
       colors: {
+        // Custom color template
+        // ------------------------------------------------
+        peach: {
+          light: '#FEC89A', // Lightest peach
+          DEFAULT: '#FCD5CE', // Default peach if you just use 'peach'
+          dark: '#936A61', // Darker peach
+          medium: '#FFB5A7', // Medium peach
+        },
+        cream: {
+          light: '#F8EDEB',
+          DEFAULT: '#F9DCC4',
+        },
+        smokey: {
+          DEFAULT: '#1A1A1A',
+        },
+        // ------------------------------------------------
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -66,10 +83,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        fadeIn: 'fadeIn 0.8s ease-out forwards',
       },
     },
   },

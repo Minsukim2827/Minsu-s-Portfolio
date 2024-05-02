@@ -6,25 +6,26 @@ import About from './components/AboutPage/AboutPage';
 import Projects from './components/ProjectsPage/ProjectsPage';
 import Footer from './components/Footer/Footer';
 import { ThemeProvider } from "./components/NavBar/DarkMode/theme-provider";
-
+import FadeInWrapper from './components/other/FadeInWrapper'; 
 function App() {
 
   return (
-    
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 <Router>
-<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-  <NavBar />
-  Hello world!
-  <Footer />
 
+  
+  <NavBar />
+  <Footer />
+  <FadeInWrapper>
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<Projects />} />
   </Routes>
-  </ThemeProvider>
-</Router>
+  </FadeInWrapper>
 
+</Router>
+</ThemeProvider>
   )
 }
 
