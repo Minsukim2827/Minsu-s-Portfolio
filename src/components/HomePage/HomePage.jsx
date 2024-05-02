@@ -11,7 +11,7 @@ const HomePage = () => {
         : "bg-gradient-to-b from-cream-light to-peach-light"; // Normal gradient for light mode
 
     return (
-        <div className={`${gradientClass} pt-20 lg:max-w-4/5 lg:mx-auto flex justify-center`}>
+        <div className={`${gradientClass} lg:max-w-4/5 lg:mx-auto flex justify-center`}>
             <Intro />
         </div>
     );
