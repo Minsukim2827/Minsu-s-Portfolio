@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-const AnimationFadeInWrapper = ({ children }) => {
+const FadeInWrapper = ({ children }) => {
   const location = useLocation();
 
   return (
@@ -11,4 +11,4 @@ const AnimationFadeInWrapper = ({ children }) => {
   );
 };
 
-export default AnimationFadeInWrapper;
+export default FadeInWrapper;
