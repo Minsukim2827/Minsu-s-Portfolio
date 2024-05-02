@@ -10,10 +10,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Code className="mr-2"/>
+            <Code className="mr-2 w-10 h-10"/>
             <span className="font-bold text-2xl hover:text-peach-dark">M.</span>
             <span className="font-bold text-2xl text-peach-dark hover:text-smokey">folio</span>
-            <CodeXml className="ml-2"/>
+            <CodeXml className="ml-2 w-10 h-10"/>
           </div>
           <div className="flex items-center space-x-4">
             <Button variant="navHover" className="bg-transparent font-bold">
