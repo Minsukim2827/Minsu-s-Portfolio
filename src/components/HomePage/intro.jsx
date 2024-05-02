@@ -13,7 +13,7 @@ function Intro() {
     };
 
     return (
-        <div className="flex flex-row h-auto md:h-screen pb-16 justify-center items-center gap-8 max-w-7xl mx-0 -pt-10 mr-10">
+        <div className="flex flex-row h-auto md:h-screen justify-center items-center gap-8 max-w-7xl mx-0 -pt-10 mr-10">
             <div className="w-3/5 flex flex-col justify-evenly gap-6">
                 <h1 className="text-5xl font-extrabold -mb-2">From Pixel to Performance: Enhancing Software Through Design</h1>
                 <p className="text-peach-dark font-bold">My name is Minsu! Explore my portfolio where I showcase my skills in web development, backend development, and much more! Creating new projects while learning better development fundamentals every day.</p>
