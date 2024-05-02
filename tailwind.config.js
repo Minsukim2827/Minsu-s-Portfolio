@@ -34,6 +34,19 @@ module.exports = {
         smokey: {
           DEFAULT: '#1A1A1A',
         },
+        inverted_peach: {
+          light: '#013765', // Lightest peach
+          DEFAULT: '#032a31', // Default peach if you just use 'peach'
+          dark: '#6c959e', // Darker peach
+          medium: '#004a58', // Medium peach
+        },
+        inverted_cream: {
+          light: '#071214',
+          DEFAULT: '#06233b',
+        },
+        inverted_smokey: {
+          DEFAULT: '#e5e5e5',
+        },
         // ------------------------------------------------
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

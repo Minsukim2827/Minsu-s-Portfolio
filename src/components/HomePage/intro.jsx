@@ -13,11 +13,11 @@ function Intro() {
     };
 
     return (
-        <div className="flex flex-row h-auto md:h-screen mb-16 justify-center items-center gap-8 max-w-7xl mx-0 -mt-10 mr-10">
-            <div className="p-4 w-3/5 flex flex-col justify-evenly gap-6">
+        <div className="flex flex-row h-auto md:h-screen pb-16 justify-center items-center gap-8 max-w-7xl mx-0 -pt-10 mr-10">
+            <div className="w-3/5 flex flex-col justify-evenly gap-6">
                 <h1 className="text-5xl font-extrabold -mb-2">From Pixel to Performance: Enhancing Software Through Design</h1>
-                <p>My name is Minsu! Explore my portfolio where I showcase my skills in web development, backend development, and much more! Creating new projects while learning better development fundamentals every day.</p>
-                <Button className="rounded-2xl w-20 hover:bg-peach-dark" onClick={togglePdfModal}>Resume</Button>
+                <p className="text-peach-dark font-bold">My name is Minsu! Explore my portfolio where I showcase my skills in web development, backend development, and much more! Creating new projects while learning better development fundamentals every day.</p>
+                <Button className="text-md font-bold rounded-2xl w-24 hover:bg-peach-dark" onClick={togglePdfModal}>Resume</Button>
                 {showPdfModal && (
         <div className="pdf-modal" onClick={togglePdfModal}>
           <iframe 
