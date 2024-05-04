@@ -4,7 +4,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Home from './components/HomePage/HomePage';
 import About from './components/AboutPage/AboutPage';
 import Projects from './components/ProjectsPage/ProjectsPage';
-import Footer from './components/Footer/Footer';
+//import Footer from './components/Footer/Footer';
 import { ThemeProvider } from "./components/NavBar/DarkMode/theme-provider";
 import FadeInWrapper from './components/other/FadeInWrapper'; 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<Projects />} />
   </Routes>
-  <Footer />
+  {/* <Footer /> */}
   </FadeInWrapper>
 
 </Router>

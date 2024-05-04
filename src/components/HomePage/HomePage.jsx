@@ -10,7 +10,7 @@ const HomePage = () => {
         : "bg-gradient-to-b from-cream-light to-peach-light"; 
 
     return (
-        <div className={`${gradientClass} lg:max-w-4/5 lg:mx-auto flex justify-center`}>
+        <div className={`${gradientClass} lg:max-w-4/5 lg:mx-auto flex justify-center pt-16 md:pt-0`}>
             <Intro />
         </div>
     );
