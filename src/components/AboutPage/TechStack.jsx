@@ -1,7 +1,7 @@
 import React from 'react';
 import bg from './../../assets/stack/bg.png';
 import { Canvas } from '@react-three/fiber';
-import { Model } from './Model.jsx'; 
+ import Model from './Model';
 import {OrbitControls} from '@react-three/drei';
 
 const TechStack = () => {
@@ -12,7 +12,7 @@ const TechStack = () => {
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                 <pointLight position={[-10, -10, -10]} />
                 <OrbitControls enableZoom={false}/>
-                <Model  scale={2.5}/>
+                <Model />
             </Canvas>
         </div>
     );

@@ -3,20 +3,22 @@ import { useGLTF } from '@react-three/drei';
 import person from './../../assets/stack/model1.glb';
 import { useFrame } from '@react-three/fiber';
 
-export function Model(props) {
+export default function Model(props) {
   const { nodes } = useGLTF(person);
   const modelRef = useRef();
 
   useFrame((state) => {
     if (modelRef.current) {
-      modelRef.current.position.y = 0.1 + 0.1 * Math.sin(state.clock.elapsedTime );
+      modelRef.current.position.y = -0.05 + 0.05 * Math.sin(state.clock.elapsedTime );
     }
   });
 
   return (
     <group {...props} dispose={null}
-    position={[0.2,0,0]}
-    rotation={[0,4.8,0]}>
+    position={[0.1,0,0]}
+    rotation={[0,4.8,0]}
+    scale={2}>
+
       <mesh
         ref={modelRef} 
         castShadow
@@ -29,3 +31,4 @@ export function Model(props) {
 }
 
 useGLTF.preload(person);
+
