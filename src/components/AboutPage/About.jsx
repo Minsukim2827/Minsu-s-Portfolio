@@ -1,7 +1,6 @@
 // About.jsx
 import React from 'react';
 import Carousel from './Carousel';
-import { Car } from 'lucide-react';
 
 const About = () => {
     return (
@@ -27,6 +26,7 @@ const About = () => {
             <div className="flex p-5 flex-col gap-5 items-center justify-center">
                 <h1 className="text-5xl font-bold border-b-2 border-smokey">My Skills</h1>
                 <Carousel />
+                <p>icons by <a href="icons8.com">icons8</a></p>
             </div>
         </div>
     );
