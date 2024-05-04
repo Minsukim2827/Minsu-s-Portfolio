@@ -2,13 +2,13 @@ import React from 'react';
 import { Code, CodeXml } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
-import { useTheme } from "@/components/NavBar/DarkMode/theme-provider"; // Ensure the path is correct
-import { ModeToggle } from './DarkMode/mode-toggle'; // Make sure the path is correct
+import { useTheme } from "@/components/NavBar/DarkMode/theme-provider"; 
+import { ModeToggle } from './DarkMode/mode-toggle'; 
 
 const NavBarFull = () => {
-  const { theme } = useTheme(); // Using the useTheme hook to get the current theme
+  const { theme } = useTheme(); 
 
-  // Determine the text color classes based on the theme
+
   const textColorClass = theme === 'dark' ? "text-inverted_smokey" : "text-smokey";
 
   return (

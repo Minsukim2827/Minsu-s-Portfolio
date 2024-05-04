@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Code, CodeXml } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useTheme } from "@/components/NavBar/DarkMode/theme-provider"; // Ensure the path is correct
+import { useTheme } from "@/components/NavBar/DarkMode/theme-provider"; 
 import { ModeToggle } from './DarkMode/mode-toggle';
 
 const NavMobile = () => {

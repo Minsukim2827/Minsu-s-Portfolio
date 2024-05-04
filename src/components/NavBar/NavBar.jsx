@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBarFull from './NavBarFull'; // Ensure the path is correct
-import NavMobile from './NavMobile'; // Ensure the path is correct
+import NavBarFull from './NavBarFull'; 
+import NavMobile from './NavMobile'; 
 
 const Navbar = () => {
   return (
