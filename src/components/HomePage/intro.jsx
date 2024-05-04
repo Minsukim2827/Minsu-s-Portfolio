@@ -14,7 +14,7 @@ function Intro() {
 
     return (
         <div className="pt-8 flex flex-col md:flex-row h-auto md:h-screen justify-center items-center gap-4 md:gap-8 max-w-7xl mx-auto p-4">
-            <div className="flex-1 flex flex-col justify-evenly gap-3">
+            <div className="flex-1 flex flex-col justify-evenly gap-8 md:gap-3">
                 <h1 className="text-3xl md:text-5xl font-extrabold -mb-2">From Pixel to Performance: Enhancing Software Through Design</h1>
                 <p className="text-base md:text-lg font-bold dark:text-peach-dark">My name is Minsu! Explore my portfolio where I showcase my skills in web development, backend development, and much more! Creating new projects while learning better development fundamentals every day.</p>
                 <Button className="text-md font-bold rounded-2xl w-full md:w-24 hover:bg-peach-dark" onClick={togglePdfModal}>Resume</Button>
