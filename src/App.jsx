@@ -15,13 +15,14 @@ function App() {
 
   
   <NavBar />
-  <Footer />
+  
   <FadeInWrapper>
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<Projects />} />
   </Routes>
+  <Footer />
   </FadeInWrapper>
 
 </Router>

@@ -5,7 +5,7 @@ const FadeInWrapper = ({ children }) => {
   const location = useLocation();
 
   return (
-    <div key={location.pathname} className="animate-fadeIn opacity-0 transition-opacity duration-600 ease-out">
+    <div key={location.pathname} className="animate-fadeIn opacity-0 transition-opacity duration-400 ease-out">
       {children}
     </div>
   );
