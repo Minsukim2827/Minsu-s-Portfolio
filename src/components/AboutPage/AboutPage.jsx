@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './About';
 import { useTheme } from "@/components/NavBar/DarkMode/theme-provider"; 
+import TechStack from './TechStack';
 
 const AboutPage = () => {
     const { theme } = useTheme(); 
@@ -10,10 +11,12 @@ const AboutPage = () => {
         : "bg-gradient-to-b from-cream-light to-peach-light"; 
 
     return (
-        <div className={`${gradientClass} flex flex-col justify-center min-h-screen overflow-hidden pt-16`}>
+        <div className={`${gradientClass} flex flex-col justify-center min-h-screen pt-16 overflow-hidden`}>
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <About />
+                
             </div>
+            <TechStack />
         </div>
     );
 };
