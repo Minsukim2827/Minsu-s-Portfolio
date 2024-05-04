@@ -12,12 +12,14 @@ const NavMobile = () => {
 
   return (
     <div className="flex justify-between items-center w-full px-4 ">
+        <Link to="/">
       <div className="flex items-center">
         <Code className="mr-2 w-10 h-10"/>
         <span className="font-bold text-2xl ">M.</span>
         <span className={`font-bold text-2xl text-peach-dark`}>folio</span>
         <CodeXml className="ml-2 w-10 h-10"/>
       </div>
+      </Link>
       <div className="flex flex-row items-center gap-3">
         <ModeToggle />
         <Menu className="w-8 h-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)}/>

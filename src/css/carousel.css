@@ -57,7 +57,7 @@
   }
   
   .carousel-images-slide .carousel-img {
-    height: 100px;
+    height: 150px;
     margin: 0 40px;
   }
 
@@ -69,6 +69,6 @@
   }
   
   .carousel-img:hover {
-    flex-grow: 2; /* Increase the size of the image being hovered */
+    flex-grow: 1; /* Increase the size of the image being hovered */
     transform: scale(1.1); /* Slightly scale up the image */
   }
