@@ -39,7 +39,7 @@ function Intro() {
                 
             </div>
             <div className="w-2/5">
-                <img src={displayPhoto} alt="Display Photo" className="w-full pr-8" />
+                <img src={displayPhoto} alt="Display Photo" className="w-full pr-8 rounded-full bg-peach shadow-lg " />
             </div>
 
         </div>
