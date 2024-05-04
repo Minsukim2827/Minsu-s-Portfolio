@@ -19,13 +19,13 @@ function Intro() {
                 <p className="text-base md:text-lg font-bold dark:text-peach-dark">My name is Minsu! Explore my portfolio where I showcase my skills in web development, backend development, and much more! Creating new projects while learning better development fundamentals every day.</p>
                 <Button className="text-md font-bold rounded-2xl w-full md:w-24 hover:bg-peach-dark" onClick={togglePdfModal}>Resume</Button>
                 {showPdfModal && (
-                    <div className="pdf-modal" onClick={togglePdfModal}>
+                    <div className="pdf-modal z-51" onClick={togglePdfModal}>
                       <iframe 
                         className="pdf-modal__iframe"
                         src={pdf}
                         type="application/pdf" 
                         onClick={(e) => e.stopPropagation()} 
-                        style={{ height: "500px", width: "100%" }}
+                        style={{ height: "80vh", width: "80%", maxWidth: "1000px" }}
                       />
                     </div>
                 )}
