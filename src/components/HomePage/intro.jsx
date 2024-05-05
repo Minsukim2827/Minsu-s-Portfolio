@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import displayPhoto from '@/assets/photo1.png';
 import {Button} from '@/components/ui/button';
-import pdf from '@/assets/resume02052024.pdf';
+import pdf from '@/assets/resume05052024.pdf';
 import {Github, Linkedin} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
