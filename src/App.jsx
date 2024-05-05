@@ -7,6 +7,7 @@ import Projects from './components/ProjectsPage/ProjectsPage';
 //import Footer from './components/Footer/Footer';
 import { ThemeProvider } from "./components/NavBar/DarkMode/theme-provider";
 import FadeInWrapper from './components/other/FadeInWrapper'; 
+import Skills from './components/SkillsPage/SkillsPage';
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/projects" element={<Projects />} />
+    <Route path="/skills" element={<Skills />} />
   </Routes>
   {/* <Footer /> */}
   </FadeInWrapper>

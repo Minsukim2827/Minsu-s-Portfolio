@@ -17,7 +17,9 @@ module.exports = {
       },
     },
     extend: {
-      
+      boxShadow: {
+        'blue-glow': '0 0 10px 2px rgba(0, 191, 255, 0.7)', // Adjust color and spread as needed
+      },
       colors: {
         // Custom color template
         // ------------------------------------------------
@@ -99,12 +101,19 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 }
+        },
+        'spin-reverse': {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(-360deg)'},
         }
       },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: 'fadeIn 0.8s ease-out forwards',
+        'spin-slow': 'spin 40s linear infinite',
+        'spin-slow-reverse': 'spin-reverse 40s linear infinite',
       },
     },
   },

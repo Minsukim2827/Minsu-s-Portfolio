@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './Carousel';
+
 
 const About = () => {
     return (
@@ -20,12 +20,6 @@ const About = () => {
                         <p className="dark:text-peach-dark">Built teamwork skills through sports and improved them in professional settings at Gallagher and New World, focusing on proactive communication and alignment towards goals.</p>
                     </div>
                 </div>
-            </div>
-
-            <div className="flex p-5 flex-col gap-5 items-center justify-center mt-5">
-                <h1 className="text-3xl md:text-5xl font-bold border-b-2 border-smokey ">My Skills</h1>
-                <Carousel />
-                <p>icons by <a href="https://icons8.com">icons8</a></p>
             </div>
         </div>
     );

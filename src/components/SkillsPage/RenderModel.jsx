@@ -6,14 +6,13 @@ import React, {Suspense} from "react"
 
 const RenderModel = ({children, className}) => { 
     return (
-        <div className={clsx("w-screen h-screen relative z-50")}>
             <Canvas>
                 <Suspense fallback={null}>
                     {children}
                 </Suspense>
-                <Environment preset="night" />
+                <Environment preset="sunset" />
             </Canvas>
-        </div>
+
     )
 }
 

@@ -35,6 +35,11 @@ const NavBarFull = () => {
               About
             </Link>
           </Button>
+          <Button variant="navHover" className="bg-transparent font-bold">
+            <Link to="/skills" className={`text-lg ${textColorClass} hover:text-peach-dark`}>
+              Skills
+            </Link>
+          </Button>
 
           <Button variant="navHover" className="bg-transparent font-bold">
             <Link to="/projects" className={`text-lg ${textColorClass} hover:text-peach-dark`}>
