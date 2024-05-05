@@ -28,6 +28,7 @@ const NavMobile = () => {
         <div className={`absolute top-full right-0 w-full ${backgroundColorClass} bg-opacity-80 shadow-md flex flex-col items-start py-2`}>
           <Link to="/" className={`px-4 py-2 text-lg ${textColorClass}`} onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" className={`px-4 py-2 text-lg ${textColorClass}`} onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/skills" className={`px-4 py-2 text-lg ${textColorClass}`} onClick={() => setIsOpen(false)}>Skills</Link>
           <Link to="/projects" className={`px-4 py-2 text-lg ${textColorClass}`} onClick={() => setIsOpen(false)}>Projects</Link>
         </div>
       )}
