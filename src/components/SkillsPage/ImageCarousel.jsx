@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import azure from '@/assets/tech stack/azure.png';
 import cSharp from '@/assets/tech stack/c-sharp.png';
 import gnuBash from '@/assets/tech stack/gnu-bash.png';
@@ -37,37 +37,68 @@ const imagePaths = [
 ];
 
 const ImageCarousel = () => {
-    const radius = 300; 
+    const [carouselSize, setCarouselSize] = useState({
+        width: 600,
+        height: 600,
+        radius: 280,
+        centerOffset: 295
+    });
+
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth < 768) { // Assuming 'md' breakpoint at 768px
+                setCarouselSize({
+                    width: 300,
+                    height: 300,
+                    radius: 150,
+                    centerOffset: 150
+                });
+            } else {
+                setCarouselSize({
+                    width: 600,
+                    height: 600,
+                    radius: 280,
+                    centerOffset: 295
+                });
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Call on mount to set initial state
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const angleIncrement = 360 / imagePaths.length;
 
     return (
-        <div style={{ position: 'relative', width: '600px', height: '600px' }}>
-{imagePaths.map((path, index) => {
-    const angleRad = (index * angleIncrement * Math.PI) / 180;
-    const x = radius * Math.cos(angleRad) + 295; 
-    const y = radius * Math.sin(angleRad) + 295; 
-    return (
-        <motion.div
-            key={index}
-            style={{
-                position: 'absolute',
-                left: `${x}px`,
-                top: `${y}px`,
-                translateX: '-50%',
-                translateY: '-50%',
-            }}
-            initial={{ boxShadow: '0 0 10px rgba(0, 191, 255, 0)' }}
-            animate={{ boxShadow: '0 0 20px rgba(0, 191, 255, 1)' }}
-            transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }}
-        >
-            <img src={path} alt="Tech Icon" className="w-12 h-12 animate-spin-slow-reverse" />
-        </motion.div>
-    );
-})}
-
+        <div className="relative" style={{ width: `${carouselSize.width}px`, height: `${carouselSize.height}px` }}>
+            {imagePaths.map((path, index) => {
+                const angleRad = (index * angleIncrement * Math.PI) / 180;
+                const x = carouselSize.radius * Math.cos(angleRad) + carouselSize.centerOffset; 
+                const y = carouselSize.radius * Math.sin(angleRad) + carouselSize.centerOffset; 
+                return (
+                    <motion.div
+                        key={index}
+                        style={{
+                            position: 'absolute',
+                            left: `${x}px`,
+                            top: `${y}px`,
+                            translateX: '-50%',
+                            translateY: '-50%',
+                        }}
+                        initial={{ boxShadow: '0 0 10px rgba(0, 191, 255, 0)' }}
+                        animate={{ boxShadow: '0 0 20px rgba(0, 191, 255, 1)' }}
+                        transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }}
+                    >
+                        <img src={path} alt="Tech Icon" className="w-10 h-10 md:w-12 md:h-12 animate-spin-slow-reverse" />
+                    </motion.div>
+                );
+            })}
         </div>
     );
 };
 
 export default ImageCarousel;
-
