@@ -14,6 +14,9 @@ You can view the live site here: [Minsu's Portfolio](https://minsu-s-portfolio.v
 - **Shadcn**: A UI component library that provides ready-to-use components.
 - **Lucide-react**: React icons library that offers a wide range of SVG icons.
 - **Netlify**: The platform where the website is hosted, providing excellent support for React applications.
+- **Framer-motion**
+- **Threejs**
+- **@Particles/React**
 
 ## Features
 
